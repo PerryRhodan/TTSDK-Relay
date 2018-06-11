@@ -1,0 +1,7 @@
+-- General server return format: --
+CODE_NEWSYNC_DATA
+
+-- For sync --
+CODE_NEWSYNC_NAME_STATUS		-- "NAME" is name connected with used email. "STATUS" is account status.
+
+TODO update this file, or confirm this is still accurate
