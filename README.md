@@ -16,9 +16,9 @@ OnlineRelay relay = new OnlineRelay(email, password);
 
 // Decide on a tag to be used
 String tag = "game_sunday";
-String message = "A message regarding out sunday game session";
+String message = "A message regarding our sunday game session";
 
-// the names of your targets these are
+// The names of your targets - these are
 // again the usernames on www.taleteller.de. 
 // This could be your own name as well,
 // if you want to send a message to yourself
@@ -31,14 +31,14 @@ String[] targets = {target1, target2};
 // before they are send out
 relay.newOutMessage(message, tag, targets);
 
-// when ready, you can send out a message
-// keep in mind there is a delay of >10 seconds
+// when ready, you can send out a message.
+// Keep in mind there is a delay of >10 seconds
 // imposed in how often messages can be sent.
 // So we can test that first:
 if(relay.readyToSend())
 	relay.sendNext();
 
-// to check if you have received a message,
+// To check if you have received a message,
 // call the pullMessages and then check
 // if there is a new unread message to 
 // be handled
